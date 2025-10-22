@@ -7,36 +7,118 @@ body,html{
     height: 100%;
     width: 100%;
 }
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: absolute;
+    /* left: 50%;
+    top: 50%;
+    z-index: index 5; */
+    /* transform: translateX(100%);
+    transform: translateY(-50%); */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(207, 220, 20);
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    z-index: 20;
+}
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(16, 202, 209);
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 30;
+}
 #parent{
     height: 100%;
     width: 100%;
     display: flex;
     /* justify-content: center; */
-    /* justify-content: space-between; */
-    /* justify-content: space-around; */
-    justify-content: center;
-    align-items: center;
-    
+    /* align-items: center; */
+    /* flex-direction: column; */
+    flex-wrap:nowrap;
+
 }
-#box1{
+#child1{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 3px solid white;
+    flex-shrink: 9;
+}
+#child2{
     height: 200px;
     width: 200px;
     background-color: lightblue;
+    border: 3px solid white;
 }
-#box2{
+#child3{
     height: 200px;
     width: 200px;
-    background-color: rgb(219, 84, 26);
-    /* position: absolute;
-    left: 200px;
-    top: 0; */
+    background-color:lightsalmon;
+    border: 3px solid white;
 }
 
-#box3{
-    height: 200px;
-    width: 200px;
-    background-color: rgb(100, 4, 155);
-    /* position: absolute;
-    left: 400px;
-    top: 0; */
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #9af7f7;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.card{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.card img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+
+}
+.card h2{
+    font-weight: 500;
+    font-size: 26px;
+}
+.card button{
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: rgb(19, 184, 239);
+    border: none;
+    color: white;
+}
+.card p{
+    font-size: 14px;
+    font-weight: 600;
+    color:#5d5050 ;
+    text-align: center;
+    margin: 10px 0;
+}
+.card button:hover{
+    background: red;
 }
