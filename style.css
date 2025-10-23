@@ -2,123 +2,129 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 }
 body,html{
     height: 100%;
     width: 100%;
+
 }
-#box1{
-    height: 200px;
-    width: 200px;
-    background-color: crimson;
-    position: absolute;
-    /* left: 50%;
-    top: 50%;
-    z-index: index 5; */
-    /* transform: translateX(100%);
-    transform: translateY(-50%); */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+/* body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: cornflowerblue; */
+
+    /* perspective: 200px; */
+    /* padding: 20px; */
 
 
+/* } */
+/* #box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 5px solid yellow;
 }
 #box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 13, 255);
+    border: 5px solid rgb(43, 255, 0);
+}
+.dba{
     height: 200px;
     width: 200px;
-    background-color: rgb(207, 220, 20);
-    position: absolute;
-    top: 30%;
-    left: 60%;
-    z-index: 20;
-}
-#box3{
-    height: 200px;
-    width: 200px;
-    background-color: rgb(16, 202, 209);
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    z-index: 30;
-}
-#parent{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-    flex-wrap:nowrap;
+    background-color:crimson;
+   background-image: url(https://images.unsplash.com/photo-1759671826409-ad0aae2a2485?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NXx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   background-position: center;
+   /* transform: rotateX(45deg); */
+   /* transform: scale(12); */
 
-}
-#child1{
-    height: 200px;
-    width: 200px;
+/* }
+.card{
+    height: 300px;
+    width: 300px;
     background-color: crimson;
-    border: 3px solid white;
-    flex-shrink: 9;
-}
-#child2{
-    height: 200px;
-    width: 200px;
-    background-color: lightblue;
-    border: 3px solid white;
-}
-#child3{
-    height: 200px;
-    width: 200px;
-    background-color:lightsalmon;
-    border: 3px solid white;
-}
-
-#main{
+    border-radius: 10px;
+    /* overflow: hidden; */
+/* } */
+/* .card img{
     height: 100%;
     width: 100%;
-    background-color: #9af7f7;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    object-fit: cover;
+    object-position: center;
 
+
+}
+.bottom{
+    height: 40%;
+    width: 100%;
+   background: linear-gradient(transparent,rgb(0, 0, 0));
+}  */ 
+
+/* Hover:--- */
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(3, 61, 64);
+    display: flex;
+    gap: 20px;
+    
+    
+    
 }
 .card{
     height: 300px;
-    width: 250px;
-    background-color: rgb(253, 253, 253);
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px black;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-.card img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
+    width: 350px;
+    background-color: rgb(7, 29, 36);
+    position: relative;
+    transition: all ease 1s;
+    overflow: hidden;
 
 }
-.card h2{
-    font-weight: 500;
-    font-size: 26px;
+ 
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+    
+
 }
-.card button{
-    border-radius: 50px;
-    padding: 5px 10px;
-    background-color: rgb(19, 184, 239);
-    border: none;
-    color: white;
+.bottom{
+    height: 40%;
+    width: 100%;
+background: linear-gradient(transparent, black);
+    position: absolute;
+
+    bottom: -40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: all ease 0.5s;
+
+    
 }
-.card p{
-    font-size: 14px;
-    font-weight: 600;
-    color:#5d5050 ;
-    text-align: center;
-    margin: 10px 0;
+.card:hover .bottom{
+    /* background-color:pink;
+    transform: rotate(30deg); */
+    bottom:0%;
 }
-.card button:hover{
-    background: red;
+.bottom h4{
+    font-size: 30px;
+    font-weight: 400;
 }
+.bottom h3{
+  background-color: red;
+  padding: 5px 7px;
+  border-radius: 50%;
+
+}
+
+
+
