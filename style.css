@@ -7,43 +7,55 @@ body,html{
     height: 100%;
     width: 100%;
 }
-main{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    display: grid;
-    /* grid-template-columns: 50% 50%; */
-    /* grid-template-columns: 1fr 2fr  1fr; */
-     /* grid-template-columns: 1fr 1fr 1fr ; */
-    /* grid-template-rows:1fr  1fr 1fr; */ 
-    /* grid-template-columns: 1fr minmax(100px,400px) 1fr ; */
-    /* grid-template-columns: repeat(3,200px); */
-    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-  /* grid-gap: 10px; */
-  /* align-items:start ;
-  justify-items: start;
-  align-items: end; */
-    /* align-items: center;
-    justify-items: center; */
-    /* align-content: space-evenly;
-    justify-content: center;
-   */
-  
+.box{
+    height: 200px;
+    width: 800px;
+    background-color: crimson;
+}
+.inner{
+    /* height: 50%;
+    width: 50%; */
+    background-color: yellow;
+
 
 }
-.child{
-    /* height: 100px;
-    width: 100px; */
-    background-color: #da260b;
-    border: 3px solid white ;
+
+h1{
+    font-size: 20vw;
 }
-#child1{
-    grid-column-start: 1;
-    grid-column-end:4;
-    /* grid-row-start: 1; */
-    /* grid-row-end: 2; */
+/* .box2{
+    height: 30vh;
+    width: 30vh;
+    background-color: pink;
+} */
+/* .box2{
+    height: 30vmax;
+    width: 30vmax;
+    background-color: pink;
+} */
+.box2{
+    height: 30vmin;
+    width: 30vmin;
+    background-color: pink;
+}
+.parent{
+    background: lightblue;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+   font-size: 20px;
+     
+}
+h2{
+    font-size: 1em;
 
-    
-
- 
+}
+h4{
+    font-size: 3em;
+}
+h6{
+    font-size: 1śem;
+}
+p{
+    font-size: 15px;
 }
